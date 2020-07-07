@@ -158,3 +158,116 @@ ul.menu a:hover {
 .header-grid-items h3 {
     font-size: 2rem;
 }
+/* End Header */
+.post-article-title {
+    padding: 3rem 0;
+}
+.post-article-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-areas: "posts sidebar";
+}
+.post-article-posts {
+    grid-area: posts;
+}
+.post-article-items {
+    display: flex;
+    transition: .3s;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.post-article-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 20px rgba(0,0,0,0.2);
+}
+.post-article-items .post-article-items-img {
+    width: 100%;
+}
+.post-article-items img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post-article-items-content {
+    padding: 0 2rem;
+}
+.post-article-items-content p {
+    margin: 1rem 0;
+}
+.post-article-items-content a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: skyblue;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.post-article-sidebar {
+    grid-area: sidebar;
+}
+.post-article-sidebar-title {
+    padding: 0 1rem;
+}
+
+.post-article-sidebar-items {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    padding: 1rem;
+    transition: .3s;
+    border-radius: 5px;
+}
+.post-article-sidebar-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+.post-article-sidebar-items-content {
+    font-size: .8rem;
+    margin-left: 1rem;
+}
+.post-article-sidebar-items-content a {
+    text-decoration: none;
+    color: #000;
+}
+.post-article-sidebar-items-content p {
+    margin-top: .5rem;
+}
+.post-article-sidebar-items-img {
+    width: 100%;
+}
+.post-article-sidebar-items img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* End Post */
+footer {
+    background: #eee;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-grid-items {
+    padding: 1rem;
+}
+.footer-grid-items h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-grid-items ul {
+    list-style: none;
+}
+.footer-grid-items ul li {
+    margin-top: .5rem;
+    transition: .3s;
+}
+.footer-grid-items ul li:hover {
+    margin-left: 10px;
+}
+.footer-grid-items ul a {
+    text-decoration: none;
+    color: #333;
+}
